@@ -265,11 +265,11 @@ namespace Icebreaker.Bot
                     await this.OnAdaptiveCardSubmitAsync(activity, turnContext, cancellationToken).ConfigureAwait(false);
                     return;
                 }
-
+/*
                 if (!string.IsNullOrEmpty(activity.ReplyToId) && (activity.Value != null) && ((JObject)activity.Value).HasValues)
                 {
                     await this.OnProfileSaveAsync(activity, turnContext, cancellationToken).ConfigureAwait(false);
-                }
+                }*/
                 else if (string.Equals(activity.Text, MatchingActions.OptOut, StringComparison.InvariantCultureIgnoreCase))
                 {
                     // User opted out
@@ -359,7 +359,7 @@ namespace Icebreaker.Bot
             }
         }
 
-         /// <summary>
+/*         /// <summary>
         /// Handle profile updates from users.
         /// </summary>
         /// <param name="activity">Message from submitted card</param>
@@ -395,7 +395,7 @@ namespace Icebreaker.Bot
                     this.telemetryClient.TrackTrace($"Unknown action taken: {cardAction}");
                     break;
             }
-        }
+        }*/
 
         /// <summary>
         /// Send view teams card
@@ -526,6 +526,29 @@ namespace Icebreaker.Bot
 
                     // send view teams card
                     await this.SendViewTeamsCardAsync(turnContext, userInfo, cancellationToken);
+                    break;
+
+                case "update":
+
+                    var profile = cardPayload["profile"].Value<string>();
+
+                    await this.dataProvider.SetUserProfileAsync(activity.From.Id, profile);
+
+                    // Confirmation message
+                    var reply = activity.CreateReply();
+                    reply.Attachments = new List<Attachment>
+                    {
+                        new HeroCard()
+                        {
+                            Text = "Your profile has been updated!"
+                        }.ToAttachment(),
+                    };
+
+                    await turnContext.SendActivityAsync(reply, cancellationToken).ConfigureAwait(false);
+                    break;
+
+                default:
+                    this.telemetryClient.TrackTrace($"Unknown action taken: {cardType}");
                     break;
             }
         }
