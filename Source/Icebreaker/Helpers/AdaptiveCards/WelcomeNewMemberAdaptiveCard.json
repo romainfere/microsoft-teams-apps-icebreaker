@@ -40,6 +40,24 @@
           "spacing": "Medium"
         }
       ]
+    },
+    {
+      "type": "Container",
+      "isVisible": false,
+      "id": "setupProfile",
+      "items": [
+        {
+        "type": "TextBlock",
+        "text": "Set up your profile!"
+        },
+        {
+          "type": "Input.Text",
+          "id": "userProfile",
+          "placeholder": "Introduce yourself to future matches!",
+          "maxLength": 1000,
+          "isMultiline": true
+        }
+      ]
     }
   ],
   "actions": [
@@ -68,6 +86,36 @@
           "displayText": "View my teams",
           "text": "viewteams"
         }
+      }
+    },
+    {
+      "type": "Action.ShowCard",
+      "title": "Set up profile",
+      "card": {
+          "type": "AdaptiveCard",
+          "body": [
+              {
+                  "type": "Container",
+                  "items": [
+                      {
+                          "type": "Input.Text",
+                          "id": "profile",
+                          "placeholder": "Share something about yourself with future matches!",
+                          "maxLength": 1000,
+                          "isMultiline": true
+                      }
+                  ]
+              }
+          ],
+          "actions": [
+              {
+                  "type": "Action.Submit",
+                  "title": "Save",
+                  "data": {
+                      "action": "update"
+                  }
+              }
+          ]
       }
     }
   ],
