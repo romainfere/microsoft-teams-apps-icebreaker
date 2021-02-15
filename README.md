@@ -1,17 +1,17 @@
 # Icebreaker App Template
 
-| [Documentation](https://github.com/OfficeDev/microsoft-teams-icebreaker-app/wiki) | [Deployment guide](https://github.com/OfficeDev/microsoft-teams-icebreaker-app/wiki/Deployment-guide) | [Architecture](https://github.com/OfficeDev/microsoft-teams-icebreaker-app/wiki/Solution-overview) |
+| [Documentation](https://github.com/romainfere/microsoft-teams-icebreaker-app/wiki) | [Deployment guide](https://github.com/romainfere/microsoft-teams-icebreaker-app/wiki/Deployment-guide) | [Architecture](https://github.com/romainfere/microsoft-teams-icebreaker-app/wiki/Solution-overview) |
 | ---- | ---- | ---- |
 
 Many good things in life come about through happenstance. Icebreaker enables happenstance for your team. Icebreaker is a Teams bot that helps the whole team get closer by pairing up members every week at random to meet for coffee, burgers, pizza, or a walk around the block. The bot does the heavy lifting of finding a new person to meet with each week, and aids in scheduling the meetup.
 
 Icebreaker works really well for cultivating small, interest-based communities within your organization. For example, an organization may leverage this bot for a DevOps interest group to help facilitate organic cross-pollination of ideas and best practices. Another common use case is new employees’ cohorts to help employees learn more about each other and assimilate better in the new environment.
 
-![Icebreaker in action](https://github.com/OfficeDev/microsoft-teams-icebreaker-app/wiki/images/IcebreakerScheduling.gif)
+![Icebreaker in action](https://github.com/romainfere/microsoft-teams-icebreaker-app/wiki/images/IcebreakerScheduling.gif)
 
 ## Legal notice
 
-This app template is provided under the [MIT License](https://github.com/OfficeDev/microsoft-teams-icebreaker-app/blob/master/LICENSE) terms.  In addition to these terms, by using this app template you agree to the following:
+This app template is provided under the [MIT License](https://github.com/romainfere/microsoft-teams-icebreaker-app/blob/master/LICENSE) terms.  In addition to these terms, by using this app template you agree to the following:
 
 - You, not Microsoft, will license the use of your app to users or organization. 
 
@@ -28,9 +28,9 @@ This app template is provided under the [MIT License](https://github.com/OfficeD
 
 ## Get started
 
-Begin with the [Solution overview](https://github.com/OfficeDev/microsoft-teams-icebreaker-app/wiki/Solution-overview) to read about what the app does and how it works.
+Begin with the [Solution overview](https://github.com/romainfere/microsoft-teams-icebreaker-app/wiki/Solution-overview) to read about what the app does and how it works.
 
-When you're ready to try out Icebreaker, or to use it in your own organization, follow the steps in the [Deployment guide](https://github.com/OfficeDev/microsoft-teams-icebreaker-app/wiki/Deployment-guide).
+When you're ready to try out Icebreaker, or to use it in your own organization, follow the steps in the [Deployment guide](https://github.com/romainfere/microsoft-teams-icebreaker-app/wiki/Deployment-guide).
 
 ## Feedback
 
