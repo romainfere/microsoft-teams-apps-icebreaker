@@ -10,7 +10,7 @@ To begin, you will need:
     * Bot channels registration
     * Azure Cosmos DB account
     * Application Insights
-* A copy of the Icebreaker app GitHub repo (https://github.com/officedev/microsoft-teams-icebreaker-app)
+* A copy of the Icebreaker app GitHub repo (https://github.com/romainfere/microsoft-teams-icebreaker-app)
 * This is not a pre-requisite per se, but here is a video walkthrough of this deployment if you'd like to follow along as you go through your own deployment. [Icebreaker video walkthrough](https://www.youtube.com/watch?v=BkoLT3MEtZg)
 
 ## Step 1: Register Microsoft Azure AD application
@@ -46,7 +46,7 @@ At this point you have 2 unique values:
 
 1. Click on the "Deploy to Azure" button below.
 
-    [![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FOfficeDev%2Fmicrosoft-teams-icebreaker-app%2Fmaster%2FDeployment%2Fazuredeploy.json)
+    [![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fromainfere%2Fmicrosoft-teams-icebreaker-app%2Fmaster%2FDeployment%2Fazuredeploy.json)
 
 1. When prompted, log in to your Azure subscription.
 
